@@ -1,0 +1,1052 @@
+Lab Assignment(FWT)
+Web Technology Lab
+Assignment-1
+1.	Create a webpage to display your name with every letter having a different heading size.
+Answer :
+<html>
+	<head>
+		<title>Layout Tags</title>
+	</head>
+	<body>
+		<h1>Shubham</h1>
+		<h2>Shubham</h2>
+		<h3>Shubham</h3>
+		<h4>Shubham</h4>
+		<h5>Shubham</h5>
+		<h6>Shubham</h6>
+	</body>
+</html>
+
+2.	Create a webpage that displays two lists with any information you want. One list should be an ordered list and the other list should be an unordered list.
+Answer
+<html>
+	<head>
+		<title>Semantic Tags 1</title>
+	</head>
+	<body>
+		<ul>
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+		<ol>
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ol>
+	</body>
+</html>
+
+3.	We need to have a HTML containing three lists.
+List 1 will contain the following :
+1) One
+a. Uno
+b. Hanna
+2) Two
+a. Dos
+b. Dool
+3) Three
+a. Tres
+b. Set
+List 2 will contain :
+• Chevy
+o Cavilier
+o Malibu
+• Ford
+o Escort
+o F100
+• Mazda
+o 626
+List 3 should be of two types : Fruits and Vegetables
+A. Fruits
+i. Apples,Oranges,Pears,Banana
+B. Vegetables
+i. Corn
+a)On the cob
+b)Cream
+ii. Carrots
+iii. Green Beans
+Answer
+<html>
+	<head>
+		<title>Semantic Tags 2</title>
+	</head>
+	<body>
+		<h3>List 1:</h3>
+		<ol type="1">
+			<li>One</li>
+				<ol type="a">
+					<li>Uno</li>
+					<li>Hanna</li>
+				</ol>
+			<li>Two</li>
+				<ol type="a">
+					<li>Dos</li>
+					<li>Dool</li>
+				</ol>
+			<li>Three</li>
+				<ol type="a">
+					<li>Tres</li>
+					<li>Set</li>
+				</ol>
+		</ol>
+		
+		<h3>List 2:</h3>
+		<ul type = "disc">
+			<li>Chevy</li>
+				<ul type="circle">
+					<li>Cavilier</li>
+					<li>Malibu</li>
+				</ul>
+			<li>Ford</li>
+				<ul type="circle">
+					<li>Escort</li>
+					<li>F100</li>
+				</ul>
+		</ul>
+		
+		<h3>List 3:</h3>
+		<ol type="A">
+			<li>Fruits</li>
+				<ol type = "i">
+					<li>Apples,Oranges,Pears,Banana</li>
+				</ol>
+			<li>Vegetables</li>
+				<ol type = "i">
+					<li>Corn</li>
+						<ol type="a">
+							<li>On the cob
+							<li>Cream</li>
+						</ol>
+					<li>Carrots</li>
+					<li>Green Beans</li>
+				</ol>
+		</ol>
+	</body>
+</html>
+
+
+4.	Create a page that will display an image that has a border of size 2, a width of 200, and a height of 200.
+Answer :
+<html>
+	<head>
+		<title>Semantic Tags 3</title>
+	</head>
+	<body>
+		<img alt="WiproImage"  src="apple.jpg" width="200" height="200" style="border:2px solid black">
+	</body>
+</html>
+5.	Create a page which contains two links- one at the top and one at the bottom. On clicking the top link, the page has to scroll down to the bottom of the page where bottom link is present. On clicking the bottom link, the page has to scroll up to the top of the page.
+Answer :
+<html>
+	<head>
+		<title>Semantic Tags 4</title>
+	</head>
+	<style>
+	html {
+	  scroll-behavior: smooth;
+	}
+	#section1 {
+		height: 1000px;
+	}
+	</style>
+	<body>
+		<div id="section1" align="center">
+			<a href="#section2">Click Me to go down</a>
+		</div>
+		<div id="section2" align="center">
+			<a href="#section1">Click Me to go up</a>
+		</div>
+	</body>
+</html>
+Assignment -2 
+1.	Write a HTML program to display the table having the columns(highlighted) as Decimal ,English, Spanish, Korean, Binary .
+Following are the data to be in each rows respective of their columns :
+Decimals : {1,2,3,4,5}
+English : {one,two,three,four,five}
+Spanish:{uno,dos,tres,quarto,cinco}
+Korean:{hanna,dool,set,net,daset}
+Binary:{0001,0010,0011,0100,0101}
+Each element is the data which will be our rows for the corresponding columns
+
+Answer :
+<html>
+    <head>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+        <title>Styled Table</title>
+    </head>
+    <body>
+        <table border="solid 2px">
+        <tr>
+            <th>Decimal</th>
+            <th>English</th>
+            <th>Spanish</th>
+            <th>Korean</th>
+            <th>Binary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>One</td>
+            <td>Uno</td>
+            <td>Hanna</td>
+            <td>0001</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Two</td>
+            <td>Dos</td>
+            <td>Dool</td>
+            <td>0010</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Three</td>
+            <td>Tres</td>
+            <td>Set</td>
+            <td>0011</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Four</td>
+            <td>Quarto</td>
+            <td>Net</td>
+            <td>0100</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Five</td>
+            <td>Cinco</td>
+            <td>Daset</td>
+            <td>0101</td>
+        </tr>
+    </body>
+</html>
+2.	Write a HTML program to create visitor information capture. The page should have the heading “Visitors information” and should ask the following information from the user :
+• Email address using a textbox ,
+• User’s interest web for research or purchase as check box.
+• Occupation as drop down box and preselected value should be given as (select one).
+• Check “want us to send you junk emails?” and the options given are “absolutely” and “no way man” using the radio button.
+•	A horizontal line divides the heading and the body content. Once all the inputs are given, the user should be able to submit or reset.
+• This whole form should be tabulated using table tag.
+
+Answer :
+<html>
+    <head>
+       <title>Div Forms</title>
+    </head>
+    <body align="center">
+        <div>
+            <table align="center">
+                <tr>
+                    <th>Visitors Information</th>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>
+                        <br />
+                        <form>
+                            Email Address :
+                            <input type="email" name="email" id="email" /><br />
+                            User's Interest :<br />
+                            Research<input type="checkbox" name="interest" value="research" />
+                            Purchase <input type="checkbox" name="interest" value="purchase" /><br />
+                            Occupation :
+                            <select name="occupation" value="select-one" id="occupation">
+                                <option>Select One</option> </select>
+								<br />
+                            Want us to send you junk mails? <br />
+                            Absolutely<input type="radio" name="send-mail" value="yes" />
+                            No Way Man<input type="radio" name="send-mail" value="no" />
+                            <br />
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <div>
+            <h4>Register Here!</h4>
+            <form>
+                Username :<input type="text" name="uname" required autofocus /><br />
+                Password :<input type="password" name="pwd" required /><br />
+                Confirm :<input type="password" name="pwd2" required /><br />
+                Name :<input type="text" name="name" /><br />
+                Gender :</label><br />
+                Male <input type="radio" name="gender" value="M" />
+                Female <input type="radio" name="gender" value="F" />
+                Other <input type="radio" name="gender" value="O" /><br />
+                Address :<br /><textarea name="address"></textarea><br />
+				Profession :
+                    <select name="profession">
+                        <option value="Student">Student</option>
+                        <option value="Working Proffessional">Working Proffessional</option>
+                        <option value="Bussiness">Bussiness</option>
+                    </select>
+                <input type="submit" />
+            </form>
+        </div>
+    </body>
+</html>
+3.	Write a HTML program to create an online registration form which captures the following data:
+Username, Password, Confirm password, Name using textboxes.
+Gender by radio buttons.
+Address should be taken by multiple line inputs from the user.
+Finally the Profession should be provided by selecting from the drop down box.
+Make sure the contents of the page is aligned in the middle.
+
+Answer :
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+<style>
+table{
+	margin: 0% 35%;
+	
+	width: 50%;
+	border-spacing: 0px;
+	align: center;
+	display: inline-block;
+}
+th{
+	border-bottom: Solid 2px black;
+
+}
+td{
+	border: Solid 2px black;
+	border-top: 0px;
+	border-bottom: 0px;
+	padding: 7px 10px;
+}
+td#t01{
+	padding:7px 17%;
+	border-bottom: Solid 2px black;
+}
+
+input[type=text]{
+  width: 100%;
+}
+input[type=password]{
+  width: 100%;
+}
+input[type=submit]{
+  width: 100%;
+}
+input[type=reset]{
+  width: 100%;
+}
+</style>
+
+<table>
+		<tr><th>Online Registration</th><tr>
+		<tr>
+		<td>
+		<form>
+			Name :<input type="text" name="name">
+			<br><br>
+			Username :<input type="text" name="uname">
+			<br><br>
+			Password :<input type="password" name="pwd">
+			<br><br>
+			Confirm Password :<input type="password" name="cpwd">
+			<br><br>
+			User's Interest :
+			<input type="radio" name="Gender" values="male">Male
+			<input type="radio" name="Gender" values="female">Female
+			<input type="radio" name="Gender" values="others">Others
+			<br><br>
+			Address :<br>
+			<textarea rows="4" cols="50" name="address"></textarea>
+			<br><br>
+			Profession :<select name="occupation">
+  			<option value="">Select One</option>
+			<option value="">Student</option>
+			<option value="">Working Professional</option>
+  			</select>
+  			<br><br>
+ 			<tr>
+ 			<td id="t01">
+ 			<input type="submit" value="Submit Form" align="center"><br><br>
+ 			<input type="reset" value=" Reset Form" align="center">
+			</td>
+			</tr>
+		</form>
+		</td>
+		</tr>
+</table>
+
+</body>
+</html>
+</body>
+</html>
+4.	Write a HTML program to display the HTML page as described below:
+• Create a page which is divided in 3 parts. 30% horizontally on top and the rest 70 % below is split
+vertically in 2 parts again 30 % and 70% each
+• The Top header frame should display an image
+• Left side below frame should have a menu of “Font” and “Alignment”.
+• If we click on “Font” link a different page which contains 5 different fonts with font’s names should be shown on the RHS
+• If we click on “Alignment” link a different page which contains a different alignment type should be shown on the RHS frame.
+• For this create 2 webpages named Font and Alignment.
+• Font page should have 5 names of different fonts
+displayed like this
+Agency FB
+Cambria
+Elephant
+• Alignment page should have sample text aligned to different alignments
+5.	Apply the style, font: Times New Roman in Question 1 on Tables
+6.	Group the Question 2 and 3 on Forms to a single web page providing separate div tags for each forms.
+7.	Apply the HTML 5 attributes in Question 2 and 3 on Forms Sample Attributes : email, placeholder, required, multiple.
+Answer :
+Alignment.html
+<html>
+<head>
+<title>Alignment</title>
+</head>
+<body>
+<style>
+h1{
+	text-align: center; 
+}
+h2{
+	text-align: right; 
+}
+h3{
+	text-align: left; 
+}
+h4
+{
+	text-align: right; 
+}
+h5
+{
+	text-align: center; 
+}
+
+</style>
+<body>
+	<h1 id="t01" style="font-family:'Courier New'">Courier New</h1>
+	<h2 style="font-family:'Serif'">Serif</h2>
+	<h3 style="font-family:'Sans-Serif'">Sans-Serif</h3>
+	<h4 style="font-family:'Monospace'">Monospace</h4>
+	<h5 style="font-family:'Times New Roman'">Times New Roman</h5>
+</body>
+</html>
+
+Assignment4.html
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+<iframe  height=134px width=100% src="‘test.png’"></iframe>
+<iframe  height=322px width=29% src="Frame.html"></iframe>
+<iframe  height=322px width=69% src="" name="iframe_c"></iframe>
+</body>
+</html>
+Font.html
+<html>
+<head>
+<title>Font</title>
+</head>
+<style>
+h1{
+	text-align: center; 
+}
+</style>
+<body>
+	<h1 style="font-family:'Courier New'">Courier New</h1>
+	<h1 style="font-family:'Serif'">Serif</h1>
+	<h1 style="font-family:'Sans-Serif'">Sans-Serif</h1>
+	<h1 style="font-family:'Monospace'">Monospace</h1>
+	<h1 style="font-family:'Times New Roman'">Times New Roman</h1>
+</body>
+</html>
+Frame.html
+<html>
+<head>
+<title>Frame</title>
+</head>
+<style>
+h1{
+	text-align: center; 
+}
+</style>
+<body>
+	<h1><a href="Font.html" target="iframe_c">Fonts</a></h1>
+	<h1><a href="Alignment.html" target="iframe_c">Alignment</a></h1>
+</body>
+</html>
+Assignment – 3
+1.	Create a webpage that displays an image as the background of the page and set the background image position to right top.
+Answer :
+<html>
+    <head>
+        <title>Formatting 1</title>
+		<style>
+			body {
+				background: url(‘test.png’);
+				background-position: right top;
+				background-repeat: no-repeat;
+				background-size: 400px;
+			}
+		</style>
+    </head>
+    <body>
+        This page has a background image with position of right top.
+    </body>
+</html>
+2.	Create a webpage that has a background color and a background image.
+Answer :
+<html>
+    <head>
+        <title>Formatting 2</title>
+		<style>
+			body {
+				background: url(‘test.png’);
+				background-color: blue;
+			}
+		</style>
+    </head>
+    <body>
+        This page has a background image and a background color.
+    </body>
+</html>
+3.	Create a webpage that displays different background color for different elements.
+Answer :
+<html>
+    <head>
+        <title>Formatting 3</title>
+		<style>
+			body {
+				text-align: center;
+				line-height: 50px;
+			}
+
+			#elem1 {
+				background-color: red;
+			}
+
+			#elem2 {
+				background-color: green;
+			}
+
+			#elem3 {
+				background-color: blue;
+			}
+
+			#elem4 {
+				background-color: yellow;
+			}
+
+		</style>
+    </head>
+    <body>
+        <div id="elem1">
+            Element 1
+        </div>
+        <div id="elem2">
+            Element 2
+        </div>
+        <div id="elem3">
+            Element 3
+        </div>
+        <div id="elem4">
+            Element 4
+        </div>
+    </body>
+</html>
+4.	Create a webpage that displays an image as the background and also repeats the background image only horizontally.
+Answer :
+<html>
+    <head>
+        <title>Formatting 4</title>
+		<style>
+		body {
+			background: url(‘test.png’);
+			background-size: 400px;
+			background-repeat: repeat-x;
+		}
+		</style>
+    </head>
+    <body>
+        This page has a background image that repeats horizontally.
+    </body>
+</html>
+5.	Create a webpage that displays an image as the background and also repeats the background image only vertically.
+Answer :
+<html>
+    <head>
+        <title>Formatting 5</title>
+		<style>
+		body {
+			background: url(‘test.png’);
+			background-size: 400px;
+			background-repeat: repeat-y;
+		}
+		</style>
+    </head>
+    <body>
+        This page has a background image that repeats vertically.
+    </body>
+</html>
+6.	Create a webpage that displays the text in different colors for each elements.
+Answer :
+<html>
+    <head>
+        <title>Formatting 6</title>
+		<style>
+			body {
+				text-align: center;
+				line-height: 50px;
+			}
+
+			#elem1 {
+				color: red;
+			}
+
+			#elem2 {
+				color: green;
+			}
+
+			#elem3 {
+				color: blue;
+			}
+
+			#elem4 {
+				color: yellow;
+			}
+		</style>
+    </head>
+    <body>
+        <div id="elem1">
+            Element 1
+        </div>
+        <div id="elem2">
+            Element 2
+        </div>
+        <div id="elem3">
+            Element 3
+        </div>
+        <div id="elem4">
+            Element 4
+        </div>
+    </body>
+</html>
+7.	Create a webpage that displays the div element with the following text properties.
+• Text color: Magenta
+• Text alignment: right
+• Text decoration: underline
+• Text transform: uppercase
+• Text indent: 60 pixels
+Answer :
+<html>
+    <head>
+        <title>Formatting 8</title>
+		<style>
+			#text {
+				color: red;
+				text-align: left;
+				font-family: Verdana;
+				font-size: 20px;
+				font-style: italic;
+				font-weight: bold;
+			}
+		</style>
+    </head>
+    <body>
+        <div id="text">
+            • Font family: Verdana <br />
+            • Font style: italic <br />
+            • Font size: 20pixels <br />
+            • Text align: left <br />
+            • Font weight: bold <br />
+            • Text color: Red <br />
+        </div>
+    </body>
+</html>
+8.	Create a webpage that displays the div element with the following font properties.
+• Font family: Verdana
+• Font style: italic
+• Font size: 20pixels
+• Text align: left
+• Font weight: bold
+• Text color: Red
+Answer :
+<html>
+    <head>
+        <title>Formatting 8</title>
+		<style>
+			#text {
+				color: red;
+				text-align: left;
+				font-family: Verdana;
+				font-size: 20px;
+				font-style: italic;
+				font-weight: bold;
+			}
+		</style>
+    </head>
+    <body>
+        <div id="text">
+            • Font family: Verdana <br />
+            • Font style: italic <br />
+            • Font size: 20pixels <br />
+            • Text align: left <br />
+            • Font weight: bold <br />
+            • Text color: Red <br />
+        </div>
+    </body>
+</html>
+9.	Create a web page that displays an image of size approximately 200 x 200 px, which gets itself repeated fully on the page. : (Use CSS)
+Answer :
+<html>
+    <head>
+        <title>Formatting 9</title>
+		<style>
+		body {
+			background: url(‘test.png’);
+			background-size: 200px 200px;
+			background-repeat: repeat;
+		}
+		</style>
+    </head>
+    <body>
+        This page has a background image that repeats.
+    </body>
+</html>
+10.	Using CSS, create a web page that displays text “Welcome to CSS World” with an image as its border,
+a. Image repeats itself to fit the contents
+b. Image should stretch to fit the contents
+Answer :
+<html>
+    <head>
+        <title>Formatting 10</title>
+    </head>
+	<style>
+		#container {
+			text-align: center;
+			border: 50px solid;
+			border-image: url(‘test.jpg’) 50 repeat;
+		}
+	</style>
+    <body>
+        <div id="container">
+            <h1>Welcome to CSS World</h1>
+        </div>
+    </body>
+</html>
+
+Assignment – 4
+1.	Create a webpage that displays the hyperlink with the following color attributes.
+• Set the color as %FF0000 for unvisited link
+• Set the color as %FFFF00 for visited link
+• Set the color as %FF00FF for mouse over link
+• Set the color as %0000FF for selected link
+Answer :
+<html>
+    <head>
+        <title>Links 1</title>
+		<style>
+			a:link {
+				color: #ff0000;
+			}
+
+			a:visited {
+				color: #ffff00;
+			}
+
+			a:hover {
+				color: #ff00ff;
+			}
+
+			a:active {
+				color: #0000ff;
+			}
+	</style>
+    </head>
+    <body>
+        <a href="" target="_blank">Myprofile </a>
+    </body>
+</html>
+2.	Create a webpage that displays the hyperlink with the following properties.
+• Set the color as red for unvisited link
+• Set the text decoration as underline for unvisited link
+Answer :
+<html>
+    <head>
+        <title>Links 2</title>
+		<style>
+			a:link {
+			color: red;
+			text-decoration: underline;
+		}
+		</style>
+    </head>
+    <body>
+        <a href="https://github.com/skchaudhari903" target="_blank">My Git Profile</a>
+    </body>
+</html>
+3.	Create a webpage that displays the hyperlink with the following background color properties.
+• Set the background color as %FF0000 for unvisited link
+• Set the background color as %FFFF00 for visited link
+• Set the background color as %FF00FF for mouse over link
+• Set the background color as %0000FF for selected link
+Answer :
+<html>
+    <head>
+        <title>Links 3</title>
+		<style>
+			a:link {
+				background-color: #ff0000;
+			}
+
+			a:visited {
+				background-color: #ffff00;
+			}
+
+			a:hover {
+				background-color: #ff00ff;
+			}
+
+			a:active {
+				background-color: #0000ff;
+			}
+		</style>
+    </head>
+    <body>
+        <a href="filename.png" target="_blank">Wipro-PJP Repo</a>
+    </body>
+</html>
+4.	Create a webpage that displays a list as an ordered list with the following properties.
+• List-style-type: lower-greek;
+• Text align: left
+• Color: red
+• Text transform: uppercase
+• Text decoration: underline
+• Font name: Verdana
+• Font size: 20pixels
+Answer :
+html>
+    <head>
+        <title>List 1</title>
+		<style>
+			ol {
+				list-style-type: lower-greek;
+				text-align: left;
+				color: red;
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-family: Verdana;
+				font-size: 20px;
+				font-weight: bold;
+			}
+		</style>
+    </head
+    <body>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+        </ol>
+    </body>
+</html>
+5.	Create a webpage that displays a list as an unordered list with the following properties.
+•	List-style-type: square;
+•	Text align: left
+•	Color: red
+•	Text transform: uppercase
+•	Text decoration: underline
+•	Font name: Arial
+•	Font size: 25pixels
+•	Font weight: bold
+Answer :
+<html>
+    <head>
+        <title>List 2</title>
+		<style>
+			ul {
+				list-style-type: square;
+				text-align: left;
+				color: red;
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-family: Arial;
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+		</style>
+    </head>
+    <body>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </body>
+</html>
+Assignment - 5
+1.	Create a webpage that displays the paragraph with a total width of 250pixels.
+Answer :
+<html>
+    <head>
+        <title>Box 1</title>
+		<style>
+		p {
+			width: 250px;
+		}
+		</style>
+    </head>
+    <body>
+        <p>
+            This paragraph has a width of 250px, nothing more nothing less.
+        </p>
+    </body>
+</html>
+2.	Create a webpage that displays the paragraph with the following properties.
+• Set the width of the border as 10 Pixels.
+• Set the style of the border as dotted.
+• Set the color of the border as #0000ff
+Answer :
+<html>
+    <head>
+		<title>Box 2</title>
+		<style>
+			p {
+				border: 10px dotted #0000ff;
+			}
+		</style>
+        <title>Box 2</title>
+    </head>
+    <body>
+        <p>
+            This paragraph has a dotted blue border.
+        </p>
+    </body>
+</html>
+3.	Create a webpage that displays the paragraph with the following margin properties.
+• Set the top margin as 2cm
+• Set the bottom margin as 25%
+Answer :
+<html>
+    <head>
+        <title>Box 3</title>
+		<style>
+			p {
+				margin: 2cm 0 25% 0;
+			}
+
+		</style>
+    </head>
+    <body>
+        <p>
+            This paragraph has a top margin of 2cm and bottom margin of 25%.
+        </p>
+    </body>
+</html>
+4.	Create a webpage that displays three paragraphs with the following margin properties.
+• Set the top margin as 3cm for first paragraph
+• Set the bottom margin as 5cm for first paragraph
+• Set the left margin as 2cm for second paragraph
+• Set the top margin as 25% for third paragraph
+Answer :
+<html>
+    <head>
+        <title>Box 4</title>
+		<style>
+			#first {
+				margin: 3cm 0 5cm 0;
+			}
+
+			#second {
+				margin-left: 2cm;
+			}
+
+			#third {
+				margin-top: 25%;
+			}
+		</style>
+    </head>
+    <body>
+        <p id="first">
+            This paragraph has a margin of 3cm on top, 5cm on bottom.
+        </p>
+        <p id="second">
+            This paragraph has a left margin of 2 cm.
+        </p>
+        <p id="third">
+            This paragraph has top margin of 25%.
+        </p>
+    </body>
+</html>
+5.	Create a webpage that displays four paragraphs with the following padding properties.
+• Set the left padding as 3cm for first paragraph
+• Set the right padding as 50% for second paragraph
+• Set the bottom padding as 25% for third paragraph
+• Set the top padding as 25% for fourth paragraph
+Answer :
+<html>
+    <head>
+        <title>Box 5</title>
+		<style>
+			#first {
+				padding-left: 3cm;
+			}
+
+			#second {
+				padding-right: 50%;
+			}
+
+			#third {
+				padding-bottom: 25%;
+			}
+
+			#fourth {
+				padding-top: 25%;
+			}
+		</style>
+    </head>
+    <body>
+        <p id="first">
+            This paragraph has a padding of 3cm on left.
+        </p>
+        <p id="second">
+            This paragraph has a right padding of 50%.
+        </p>
+        <p id="third">
+            This paragraph has a bottom padding of 25%.
+        </p>
+        <p id="fourth">
+            This paragraph has a top padding of 25%.
+        </p>
+    </body>
+</html>
